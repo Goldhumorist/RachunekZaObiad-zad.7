@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+<body>
+<h1>JavaScript</h1>
+<p>Please input the number of persons </p>
+<input id="numberOfPerson">
+ 
+<p>Please input a bill </p>
+<input id="bill">
+
+<p><button type="button" onclick="myFunction()">Submit</button></p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x,y;
+   
+  x = document.getElementById("numberOfPerson").value;
+   y = document.getElementById("bill").value;
+  
+ var result = y/x;
+   document.getElementById("demo").innerHTML ="One person has to pay : "+ result;
+}
+</script>
+</body>
+</html>
